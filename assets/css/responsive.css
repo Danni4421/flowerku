@@ -1,0 +1,186 @@
+/* responsive */
+
+/* pc */
+@media screen and (max-width: 1280px) {
+    .jumbotron {
+        transition: 1s;
+        width: 80%;
+    }
+
+    main .content article img {
+        width: 450px;
+    }
+
+    main {
+        transition: 1s;
+    }
+
+    #hamb {
+        display: none;
+    }
+
+    .hamb-child {
+        display: none;
+    }
+
+    .product {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+/* tablet landscape */
+@media screen and (max-width: 992px) {
+    header nav {
+        width: 50%;
+        transition: 1s;
+    }
+
+    .jumbotron img {
+        width: 400px;
+        transition: 1s;
+    }
+
+    .word h3{
+        font-size: 1.2em;
+    }
+
+    .word p {
+        font-size: 1.1em;
+        transition: 1s;
+    }
+
+    main .content article{
+        margin-top: 40px;
+    }
+
+    main .content article img {
+        width: 400px;
+        
+    }
+
+    #hamb {
+        display: none;
+    }
+
+    .hamb-child {
+        display: none;
+    }
+
+    .product {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .h {
+        width: 80%;
+    }
+}
+
+/* ipad */
+@media screen and (max-width: 768px) {
+    header nav {
+        width: 70%;
+    }
+
+    .jumbotron {
+        flex-direction: column-reverse; 
+    }
+
+    .word {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .anggrek {
+        flex-direction: column;
+    }
+
+    .mawar {
+        flex-direction: column;
+    }
+
+    .melati {
+        flex-direction: column;
+    }
+
+    #about-me {
+        margin-top: 40px;
+    }
+    
+    #hamb {
+        display: none;
+    }
+
+    .hamb-child {
+        display: none;
+    }
+
+    .product {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+    header nav {
+        display: none;
+    }
+
+    .word {
+        width: 300px;
+        transition: 1s;
+    }
+
+    #hamb {
+        display: initial;
+        font-size: 1.6em;
+        cursor: grab;
+    }
+
+    aside {
+        width: 300px;
+        height: 240px;
+    }
+
+    aside .container img {
+        width: 130px;
+    }
+
+    .zoom {
+        width: 300px;
+    }
+
+    .sosmed a img {
+        width: 40px;
+    }
+
+    aside .about {
+        font-size: 0.9em;
+    }
+
+    .on {
+    display: flex;
+    justify-content: center;
+    animation-name: slide;
+    animation-duration: 1s;
+}
+
+    .off {
+        animation: fade-off 1s linear;
+    }
+
+    .product {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .card {
+        margin: 20px 20px;
+    }
+
+    .h h3 {
+        font-size: 1.1em;
+    }
+}

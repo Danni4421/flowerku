@@ -1,0 +1,429 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* STYLE HEADER */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F0EBE3;
+    border-bottom: 1px solid #b28d52;
+}
+
+header img {
+    width: 100px;
+}
+
+header nav {
+    width: 40%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+header nav ul li a{
+    color: #333;
+    font-family: 'Ubuntu Condensed';
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+header nav ul li a:hover {
+    display: inline-block;
+    border-bottom: 3px solid #b28d52;
+}
+
+.active {
+    border-bottom: 3px solid #b28d52;
+}
+
+#hamb {
+    display: none;
+}
+
+.hamb-child {
+    display: none;
+    width: 200px;
+    height: 500px;
+    background-color: #DFBB9D;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    border-bottom-left-radius: 30px;
+}
+
+.hamb-child ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 500px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hamb-child ul li:hover {
+    width: 200px;
+    height: 50px;
+    background-color: #E4DCCF;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.hamb-child ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.on {
+    display: none;
+}
+
+.off {
+        animation: fade-off 1s linear;
+    }
+
+@keyframes slide {
+    from {
+        transform: translateX(40%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-off {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(40%);
+        opacity: 0;
+    }
+}
+/* END STYLE HEADER */
+
+/* JUMBOTRON */
+.spons {
+    width: 100%;
+    background-color: #E4DCCF;
+    display: flex;
+    justify-content: center;
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    overflow: hidden;
+}
+
+.jumbotron img {
+    width: 500px;
+    animation-name: pop-up;
+    animation-duration: 1s;
+}
+
+.word {
+    width: 550px;
+}
+
+.word h3 {
+    font-size: 1.5em;
+}
+
+.word p {
+    font-family: 'Ubuntu Condensed';
+    font-size: 1.3em;
+}
+
+button {
+    width: 240px;
+    height: 50px;
+    font-weight: bolder;
+    font-size: 1.3em;
+    background-color: #333;
+    color: #eaeaea;
+    border-radius: 60px;
+    margin-top: 15px;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
+    transition: 0.5s;
+    color: #333;
+}
+
+@keyframes pop-up {
+    from {
+        transform: translateY(30%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+/* END JUMBOTRON */
+
+/* STYLE MAIN */
+.h {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 20px auto 0;
+    padding: 20px 30px 5px;
+    border-bottom: 1px solid #333;
+}
+
+.h h3 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+
+.h a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.anggrek {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 30px auto 0;
+}
+
+.anggrek img {
+    width: 600px;
+}
+
+.mawar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mawar img {
+    width: 600px;
+}
+
+.mawar .ket {
+    text-align: right;
+}
+
+.melati {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.melati img {
+    width: 600px;
+}
+
+#about-me {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ASIDE */
+aside {
+    margin: 20px auto;
+    width: 400px;
+    height: 300px;
+    padding: 15px;
+    background-color: #7D9D9C;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+aside .container img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.container ul {
+    color: #000;
+    list-style: none;
+    padding: 15px;
+    text-align: center;
+}
+
+.sosmed {
+    display: none;
+    width: 80%;
+    justify-content: space-around;
+    transition: 1.5s;
+}
+
+.sosmed a img {
+    width: 50px;
+}
+
+aside .about {
+    display: none;
+    color: #fff;
+    transform: rotateY(180deg);
+    padding: 30px;
+    line-height: 30px;
+    text-align: justify;
+    font-family: 'Ubuntu Condensed';
+    font-size: 1.25em;
+}
+
+.zoom {
+    background-color: #333;
+    width: 450px;
+    transition: 1s;
+    animation: fade;
+    animation-duration: 1s;
+} 
+
+.zoom ul{
+    color: #fff;
+    transition: 1s;
+}
+
+.flip {
+    transform: rotateY(180deg);
+    background: rgb(77,77,77);
+    background: radial-gradient(circle, rgba(77,77,77,1) 0%, rgba(34,34,34,1) 100%);
+    width: 450px;
+}
+/* END ASIDE */
+
+main sub {
+    text-align: center;
+}
+
+/* END STYLE MAIN */
+
+/* STYLE FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    color: #fff ;
+    background-color: #576F72;
+    border-top: 3px solid #7D9D9C;
+}
+
+footer h4 {
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+footer ul {
+    list-style: none;
+}
+
+cite {
+    padding: 10px;
+}
+/* END STYLE FOOTER */
+.login {
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 300px;
+    height: 255px;
+    background-color: #333;
+    border-radius: 30px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.username input {
+    width: 200px;
+    border-radius: 30px;
+    height: 30px;
+    margin-top: 50px;
+    padding: 8px;
+}
+
+.username label {
+    color: #fff;
+    padding: 5px;
+    font-family: 'Ubuntu Condensed';
+}
+
+.pass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pass input {
+    width: 200px;
+    border-radius: 30px;
+    height: 30px;
+    padding: 8px;
+}
+
+.pass label {
+    color: #fff;
+    padding: 5px;
+    font-family: 'Ubuntu Condensed';
+}
+
+.login form .button {
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    font-family: 'Ubuntu Condensed';
+    font-size: 1.1em;
+    margin: 0 auto;
+}
+
+.balik {
+    text-align: center;
+    padding-top: 20px;
+}
+
+

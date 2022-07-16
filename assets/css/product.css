@@ -1,0 +1,57 @@
+.product {
+    float: right;
+    width: 80%;
+    height: auto;
+    margin: 60px auto 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    float: left;
+    margin: 20px;
+    width: 200px;
+    height: 340px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 0px #333;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.card ul li span {
+    color: rgb(218, 186, 7);
+    font-size: 1.1em;
+}
+
+.card ul li {
+    color: #333;
+}
+
+.card ul li:nth-child(1) {
+    width: 160px;
+    height: 50px;
+}
+
+.card ul li:nth-child(2) {
+    height: 30px;
+}
+
+
+.card ul li:nth-child(3) {
+    height: 50px;
+}
